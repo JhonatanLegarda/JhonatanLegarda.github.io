@@ -1,0 +1,20 @@
+/* FORMATEO DE ESTILOS */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.718), rgba(0, 0, 0, 0.751)), url("https://www.elregionalpiura.com.pe/images/Fotografias/2022/Mayo_2022/Ruleta-02.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}

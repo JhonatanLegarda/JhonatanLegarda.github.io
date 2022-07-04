@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de capital</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CANTIDAD -->
+    <section>
+        <h1 class="title">Ingrese la cantidad inicial</h1>
+        <input id="amount" type="number" placeholder="Valor de la apuesta">
+        <button onclick="sendInfo()">ENVIAR</button>
+
+        <br><br>
+        <button onclick="window.location.reload()">NUEVO CALCULO</button>
+    </section>
+
+    <p>Su apuesta es de: $<span id="ValueApuesta"></span></p>
+
+    <!-- TABLA DE APUESTAS -->
+    <div class="bettingTable"></div>
+    <script src="./js/index.js"></script>
+
+<h3>Este capital aumenta la probabilidad a un (97%):</span></h3>
+<h2>$<span id="valueCapitalOptimo"></span></h2>
+</body>
+</html>
