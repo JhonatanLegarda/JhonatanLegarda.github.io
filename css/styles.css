@@ -19,9 +19,10 @@ body {
     src: url(/fonts/affichage.regular.ttf);
 }
 @font-face {
-    font-family: carnivalee;
-    src: url(/fonts/carnivalee-freakshow.regular.ttf);
+    font-family: black-viper;
+    src: url(/fonts/black-viper.regular.otf);
 }
+
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url("https://www.elregionalpiura.com.pe/images/Fotografias/2022/Mayo_2022/Ruleta-02.jpg");
@@ -29,7 +30,6 @@ body {
     background-size:  100vw 100vh;
     background-attachment: fixed;
     color: white;
-    font-family: 'carnivalee';
     text-align: center;
 }
 
@@ -64,4 +64,10 @@ body {
     font-family: 'finestra';
     font-size: 25px;
     padding: 5px 20px;
+}
+
+.txt-apuesta {
+    color: red;
+    font-family: 'finestra';
+    font-weight: 700;
 }
