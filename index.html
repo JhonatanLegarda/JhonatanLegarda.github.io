@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador de capital</title>
     <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- CANTIDAD -->
-    <section>
+    <section class="section-title">
         <h1 class="title">Ingrese la cantidad inicial</h1>
-        <input id="amount" type="number" placeholder="Valor de la apuesta">
-        <button onclick="sendInfo()">ENVIAR</button>
-
+        <button class="btn" onclick="window.location.reload()">NUEVO CALCULO</button>
         <br><br>
-        <button onclick="window.location.reload()">NUEVO CALCULO</button>
+        <input class="inputBet" id="amount" type="number" placeholder="Valor de la apuesta">
+        <br><br>
+        <button class="btn" onclick="sendInfo()">CALCULAR</button>
     </section>
+
+    <br><br>
 
     <p>Su apuesta es de: $<span id="ValueApuesta"></span></p>
 

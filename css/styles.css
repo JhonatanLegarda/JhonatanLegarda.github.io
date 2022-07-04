@@ -5,16 +5,63 @@ body {
     box-sizing: 0;
 }
 
+/* fonts */
+@font-face {
+    font-family: finestra;
+    src: url(/fonts/finestra.slight-regular.ttf);
+}
+@font-face {
+    font-family: aneloma;
+    src: url(/fonts/aneloma-demo-rough.regular.ttf);
+}
+@font-face {
+    font-family: affichange;
+    src: url(/fonts/affichage.regular.ttf);
+}
+@font-face {
+    font-family: carnivalee;
+    src: url(/fonts/carnivalee-freakshow.regular.ttf);
+}
+
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.718), rgba(0, 0, 0, 0.751)), url("https://www.elregionalpiura.com.pe/images/Fotografias/2022/Mayo_2022/Ruleta-02.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url("https://www.elregionalpiura.com.pe/images/Fotografias/2022/Mayo_2022/Ruleta-02.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size:  100vw 100vh;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'carnivalee';
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
 }
 
 .title {
-    font-family: 'Roboto', sans-serif;
-    color: rgb(255, 0, 0);
+    font-family: 'aneloma';
+    color: rgb(222, 6, 6);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: .4rem;
+    display: inline-block;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0.311);
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+.inputBet {
+    min-height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 3px 10px;
+}
+
+.btn {
+    background-color: red;
+    border-radius: 20px;
+    font-family: 'finestra';
+    font-size: 25px;
+    padding: 5px 20px;
 }
