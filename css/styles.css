@@ -25,7 +25,7 @@ body {
 
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url("https://www.elregionalpiura.com.pe/images/Fotografias/2022/Mayo_2022/Ruleta-02.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url('/img/Ruleta-02.jpg');
     background-repeat: no-repeat;
     background-size:  100vw 100vh;
     background-attachment: fixed;
