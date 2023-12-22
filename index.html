@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/favicion.ico" type="image/x-icon">
-    <title>Administrador de capital</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Calculadora de apuestas</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- CANTIDAD -->
-    <section class="section-title">
-        <h1 class="title">Ingrese la cantidad inicial</h1>
-        <br>
-        <button class="btn" onclick="window.location.reload()">NUEVO CALCULO</button>
-        <br><br>
-        <input class="inputBet" id="amount" type="number" placeholder="Valor de la apuesta">
-        <br><br>
-        <button class="btn" onclick="sendInfo()">CALCULAR</button>
-    </section>
-
-    <br><br>
-
-    <p>Su apuesta es de: $<span class="txt-apuesta" id="ValueApuesta"></span></p>
-
-    <!-- TABLA DE APUESTAS -->
-    <div class="bettingTable"></div>
+    <header>
+        <h1>Calculadora de apuestas</h1>
+        <p>Esta herramienta permite calcular en base a una apuesta inicial, cual deberia ser el capital optimo para poder apostar y recuperar lo apostado. Se recomienda iniciar las apuestas con el minimo valor.</p>
+    </header>
+    <div class="container-capture-data">
+        <div class="insert-information">
+            <label for="capture-data">Ingrese el valor de su apuesta inicial:</label>
+            <input type="text" id="input-data" placeholder="Ej: 1000">
+            <input type="button" name="capture-data" id="capture-data" value="Calcular">
+        </div>
+    </div>
+    <div class="bets-table" id="bets-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>APUESTA</th>
+                    <th>CAPITAL</th>
+                    <th>RETORNO</th>
+                    <th>GANANCIA</th>
+                </tr>
+            </thead>
+            <tbody id="bets-table-body" class="bets-table-body"></tbody>
+        </table>
+    </div>
     <script src="./js/index.js"></script>
-
-<h3>Este capital aumenta la probabilidad a un (97%):</span></h3>
-<h2>$<span id="valueCapitalOptimo"></span></h2>
 </body>
 </html>
