@@ -1,36 +1,31 @@
-/* FORMATEO DE ESTILOS */
+/*
+ * GOOGLE FONTS
+ * =======================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+
+/*
+ * RESET STYLES
+ * =======================================
+*/
 body {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
-/* fonts */
-@font-face {
-    font-family: finestra;
-    src: url(/fonts/finestra.slight-regular.ttf);
-}
-@font-face {
-    font-family: aneloma;
-    src: url(/fonts/aneloma-demo-rough.regular.ttf);
-}
-@font-face {
-    font-family: affichange;
-    src: url(/fonts/affichage.regular.ttf);
-}
-@font-face {
-    font-family: black-viper;
-    src: url(/fonts/black-viper.regular.otf);
-}
-
-
+/*
+ * PAGE STYLES
+ * =======================================
+*/
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url('/img/Ruleta-02.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.852)), url('/img/Ruleta-02.webp');
     background-repeat: no-repeat;
     background-size:  100vw 100vh;
     background-attachment: fixed;
     color: white;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-title {
@@ -38,17 +33,17 @@ body {
 }
 
 .title {
-    font-family: 'aneloma';
+    font-family: 'Bebas Neue', sans-serif;
     color: rgb(222, 6, 6);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .4rem;
+    letter-spacing: .2rem;
     display: inline-block;
-    margin: 2rem auto;
+    margin: 1rem 0 0;
     background-color: rgba(0, 0, 0, 0.311);
-    padding: .5rem;
     border-radius: 20px;
+    line-height: 1.8rem;
 }
 
 .insert-information {
@@ -69,14 +64,15 @@ body {
 .btn {
     background-color: red;
     border-radius: 20px;
-    font-family: 'finestra';
-    font-size: 25px;
+    font-size: clamp(0.938rem, 0.729rem + 0.926vw, 1.563rem);
     padding: 5px 20px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .txt-apuesta {
     color: red;
-    font-family: 'finestra';
     font-weight: 700;
 }
 
@@ -86,13 +82,19 @@ body {
     padding: 0 2rem;
 }
 
+._error:focus-within {
+    border: .2rem solid red;
+    outline: none;
+}
+
 /*
  *
  * TABLE FOR BETS
- ====================================== */
+ * ======================================
+ */
 .bets-table {
     display: flex;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     overflow-y: auto;
 }
 
@@ -105,10 +107,36 @@ table {
 
 th,
 td {
-    padding: .4rem 1rem;
+    padding: .2rem .4rem;
     border: 1px solid red;
+    font-weight: 300;
+    font-size: clamp(0.875rem, 0.792rem + 0.37vw, 1.125rem);
 }
 
 .green {
     color: green;
+}
+
+.container-loader {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    background: #0000006b;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+}
+
+._hidden {
+    display: none;
+}
+
+.loading {
+    width: 20%;
+    max-width: 10rem;
 }

@@ -6,6 +6,7 @@ const btnCaptureData = document.querySelector('#capture-data');
 const inputData = document.querySelector('#input-data');
 const containerDataInfo = document.querySelector('.container-capture-data');
 const tableBetsSelector = document.querySelector('#bets-table-body');
+const loader = document.querySelector('.container-loader');
 let rowBetsSelector = '';
 
 btnCaptureData.addEventListener('click', validationInput);
@@ -57,7 +58,10 @@ function validationInput () {
             inputValue = parseInt(inputValue);
 
             successData();
-            calculateTable(inputValue);
+            loader.classList.remove('_hidden');
+            setTimeout(() => {
+                calculateTable(inputValue);
+            }, 200);
         } else {
             errorData('El número no es válido');
         }
@@ -112,4 +116,6 @@ function calculateTable (inputValue) {
         rowBets.innerHTML = columnsBets;
         tableBetsSelector.appendChild(rowBets);
     }
+
+    loader.classList.add('_hidden');
 };
