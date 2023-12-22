@@ -83,7 +83,7 @@ function calculateTable (inputValue) {
         maximumFractionDigits: 0
     });
 
-    for (number; number <= 21; number++) {
+    for (number; number <= 16; number++) {
         bets.push({number, inputValue, capital, returned, revenue});
 
         if (number > 1) {
