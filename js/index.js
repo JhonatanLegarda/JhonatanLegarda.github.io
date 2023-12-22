@@ -83,6 +83,8 @@ function calculateTable (inputValue) {
         maximumFractionDigits: 0
     });
 
+    tableBetsSelector.innerHTML = '';
+
     for (number; number <= 16; number++) {
         bets.push({number, inputValue, capital, returned, revenue});
 
@@ -99,7 +101,7 @@ function calculateTable (inputValue) {
     for (let j = 0; j < bets.length; j++) {
         rowBets = document.createElement('tr');
         columnsBets = `
-             <td>${j + 1}</td>
+             <td class="green">${j + 1}</td>
              <td>${cop.format(bets[j].inputValue)}</td>
              <td>${cop.format(bets[j].capital)}</td>
              <td>${cop.format(bets[j].returned)}</td>

@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de apuestas</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Calculadora de apuestas</h1>
+    <header class="section-title">
+        <h1 class="title">Calculadora de apuestas</h1>
         <p>Esta herramienta permite calcular en base a una apuesta inicial, cual deberia ser el capital optimo para poder apostar y recuperar lo apostado. Se recomienda iniciar las apuestas con el minimo valor.</p>
     </header>
     <div class="container-capture-data">
         <div class="insert-information">
             <label for="capture-data">Ingrese el valor de su apuesta inicial:</label>
-            <input type="text" id="input-data" placeholder="Ej: 1000">
-            <input type="button" name="capture-data" id="capture-data" value="Calcular">
+            <input type="text" id="input-data" class="input-bet" placeholder="Ej: 1000">
+            <input type="button" name="capture-data" class="btn" id="capture-data" value="Calcular">
         </div>
     </div>
     <div class="bets-table" id="bets-table">

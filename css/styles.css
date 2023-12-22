@@ -51,7 +51,15 @@ body {
     border-radius: 20px;
 }
 
-.inputBet {
+.insert-information {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: .5rem;
+    max-width: 500px;
+}
+
+.input-bet {
     min-height: 30px;
     border-radius: 20px;
     border: none;
@@ -70,4 +78,37 @@ body {
     color: red;
     font-family: 'finestra';
     font-weight: 700;
+}
+
+.section-title,
+.container-capture-data,
+.bets-table {
+    padding: 0 2rem;
+}
+
+/*
+ *
+ * TABLE FOR BETS
+ ====================================== */
+.bets-table {
+    display: flex;
+    margin: 2rem auto;
+    overflow-y: auto;
+}
+
+table {
+    margin: auto;
+    background-color: rgb(73 105 122 / 38%);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 16px 60px 2px rgb(255 255 255 / 25%);
+}
+
+th,
+td {
+    padding: .4rem 1rem;
+    border: 1px solid red;
+}
+
+.green {
+    color: green;
 }
